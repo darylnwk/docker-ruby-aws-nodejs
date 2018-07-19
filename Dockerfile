@@ -7,7 +7,7 @@ RUN apt-get update
 RUN wget https://nodejs.org/dist/v8.11.3/node-v8.11.3-linux-x64.tar.xz
 RUN tar -xvf node-v8.11.3-linux-x64.tar.xz
 
-ENV PATH=node-v8.11.3-linux-x64/bin:$PATH
+ENV PATH=/node-v8.11.3-linux-x64/bin:$PATH
 
 RUN apt-get install -y python-pip libpython-dev zip
 RUN \
